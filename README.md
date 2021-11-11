@@ -81,6 +81,21 @@ Example of part of a spectrum analyzed:
 
 ## resolution_degradation.py
 [File](resolution_degradation.py)  
+Degradate a spectrum to the desired resolution using convolution. The program saves the original spectrum and the new one in *.csv* form to future read it with the R program.  
+
+The program fits a gaussian in each emission line of the spectrum to find the resolution. The figure bellow exemplifies the fit:
+
+![fit example](Figure_2.png)
 
 ## spectrum_analysis.r
 [File](spectrum_analysis.r)  
+This program analyze two files os the same spectrum but with different resolutions.  
+Te program results are listed bellow:
+
+1. A superposed image of the two spectra;
+2. A fit of a gaussian using the Levenberg-Marquardt algorithm for each emission line;
+3. A correlation between the standard deviation and the wavelength for both spectra;
+4. A histogram of the standard deviation of the peaks of both spectra;
+5. An analyzes of the change of emission lines center position between the spectra;
+6. The lines with blend in the new spectrum;
+7. A fit of an exponential function of the blended lines and the intensity observed.
