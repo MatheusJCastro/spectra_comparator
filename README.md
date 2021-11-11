@@ -33,11 +33,36 @@ It has options to divide the spectra from 1 to 10 on horizontal axis. If the x a
 If the x axis is in Angstrons, the program has an option to show the wavelength of the peaks.  
 
 Interface example:
-![example](tiks_example.png)
+![tiks example](tiks_example.png)
 
 ## rms_compar.py
+A simple program to plot the RMS values of the calibration obtained with IRAF. This program read a *.csv* file as the following example:
+
+```csv
+Wavelength(A),	RMS_Old,	RMS_New
+3240,		0.09712,	0.01160
+3330,		0.04782,	0.00935
+3415,		0.01131,	0.00855
+```
+
+Where each line is a spectrum file calibrated in the Westinghouse (old) and the Photron (new) lamp.
+
+The execution of the program generate a table saved in LaTeX (*.tex*) format and an example can be found [here](rms.tex). It also create an image as follows:
+
+![rms_compar example](RMS_Compar.png)
 
 ## divide_spectra.py
+Plot the Westinghouse and Photron spectra, followed by the division of them (created in IRAF).
+
+**Disabled:** The execution of the program accepts (optional) one argument to plot the figure sharing the y-axis for all the subplots. The execution is like the following one:
+
+```bash
+python3 divide_spectra.py sharey
+```
+
+Example:
+![divide_spectra example](Lamps_Comparison.png)
+
 
 ## analyse_spectra.py
 
