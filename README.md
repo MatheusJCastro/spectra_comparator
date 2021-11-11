@@ -69,10 +69,10 @@ Example:
 ![divide_spectra example](Lamps_Comparison.png)
 
 ## analyse_spectra.py
-[File](plot_norms.py)  
+[File](analyse_spectra.py)  
 
 ## resolution_degradation.py
-[File](plot_norms.py)  
+[File](resolution_degradation.py)  
 
 ## spectrum_analysis.r
-[File](plot_norms.py)  
+[File](spectrum_analysis.r)  
