@@ -34,9 +34,6 @@ def open_spec(fl_name):
     spec_data = hdul[0].data  # get the data
     spec_header = hdul[0].header  # get the header
 
-    if spec_data.shape != (2048,):  # get only the actual spectrum (for multidimensional data)
-        spec_data = spec_data[1][0]
-
     # Get the wavelength information from the header
     # CDELT1 or CD1_1
     wl = spec_header['CRVAL1'] + spec_header['CD1_1'] * np.arange(0, len(spec_data))

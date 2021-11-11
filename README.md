@@ -70,6 +70,14 @@ Example:
 
 ## analyse_spectra.py
 [File](analyse_spectra.py)  
+This program create a database in *.csv* with the best matches of a provided linelist (known wavelengths of eletronic transitions for an element). It also implements an error check based on the difference of the emission line center wavelength and the wavalength of the transition, saving the result if it's more or less than the error.
+
+This database are also saved in *.tex* form and two images are generated. One with the entire spectrum and another with the spectrum cutted in three parts. The image files are saved in *.pdf* for better visualization.
+
+The programs also accept linelists created with the [NIST website](https://doi.org/10.18434/T4W30F)
+
+Example of part of a spectrum analyzed:
+![analyse_spectra example](Spectra_tha_novo.fits.png)
 
 ## resolution_degradation.py
 [File](resolution_degradation.py)  
