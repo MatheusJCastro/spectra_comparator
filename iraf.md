@@ -1,4 +1,4 @@
-#Steps to Reduce Lamps Spectras
+# Steps to Reduce Lamps Spectras
 ## Spectra Website
 
 [Noao](http://iraf.noao.edu/specatlas/)
