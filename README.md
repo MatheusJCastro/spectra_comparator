@@ -1,6 +1,8 @@
 # Spectra Comparator
 The programs listed bellow aims to analyse and characterize the Photron Lamp spectrum and compare it with the Westinghouse Lamp, both are Thorium-Argon lamps. The lamps specifications can be found [here](http://iraf.noao.edu/specatlas/).
 
+The IRAF procedures used can be found [here](iraf.md)
+
 ## plot_norms.py
 
 ## specplot.py
