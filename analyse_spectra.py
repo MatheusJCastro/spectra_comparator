@@ -211,7 +211,7 @@ def create_database(peaks_values, peaks, median):
                    index=False,
                    caption=r"Resultado obtidos a partir das simulações feitas. Sendo $\lambda_E$ o centro da " +
                            r"linha de emissão, $\lambda_0$ o valor mais próximo na lista de linhas, o ``Erro'' " +
-                           r"sendo como definido na Equação \ref{eq:errlambs}, a ``Transição'' sendo a transição " +
+                           r"como definido na Equação \ref{eq:errlambs}, a ``Transição'' sendo a transição " +
                            r"eletrônica e ``Rejeita'' sendo valores de 1 (verdadeiro) ou 0 (falso) para a rejeição da " +
                            "correspondência de acordo com 2 vezes o RMS ({:.4f}).".format(mean_rms),
                    header=[r"$\lambda_E$ ($\ang$)", r"$\lambda_0$ ($\ang$)", r"Erro ($\ang$)", "Transição", "Rejeita"],
